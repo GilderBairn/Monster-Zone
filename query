@@ -1,0 +1,13 @@
+SELECT DISTINCT mon_name, type, description
+        FROM monster, traits, monster_names, location, lives_in
+        WHERE monster_names.moID = monster.ID
+        AND traits.monID = monster.ID
+        AND lives_in.monst_ID = ID
+        AND lives_in.CoStPr = CSP
+        AND (mon_name LIKE '%".$term."%'
+             OR description LIKE '%".$term."%'
+                  OR type LIKE '%".$term."%'
+                       OR diet like '%".$term."%'
+                            OR CSP LIKE '%".$term."%' 
+                                 OR country LIKE '%".$term."%' 
+                                      OR environment like '%".$term"%')

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>Monster Zone - Sign up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="search.php">Monster Zone</a>
+        <a class="navbar-brand" >cataloging the unknown</a>
+        <form class="form-inline">
+            <a style="{color: #28a745;} :hover {color: #ffffff;};" class="btn btn-outline-success my-2 my-sm-0" href="login.html">Log in</a>
+        </form>
+    </nav>
+    <div class="signup_pane">
+      <form action="signup2.php" method="get">
+        <div class="login_contents">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Email address" aria-label="email" aria-describedby="basic-addon1" name='email'>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon2" name = 'alias'>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon3" name ='pass'>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="YYYY-MM-DD" aria-label="DOB" aria-describedby="basic-addon4" name = 'dob'>
+            </div>
+            <p style="text-align: center;">WARNING! - The details stored on this website are not guaranteed to be secure. Use passwords and information at your own risk.</p>
+            <button type="submit" value = "insert" class="btn btn-primary btn-lg-success">Sign up</button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
